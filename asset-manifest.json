@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cv-project/static/css/main.1211d2f4.chunk.css",
+    "main.js": "/cv-project/static/js/main.fad92e7d.chunk.js",
+    "main.js.map": "/cv-project/static/js/main.fad92e7d.chunk.js.map",
+    "runtime-main.js": "/cv-project/static/js/runtime-main.104b7cb5.js",
+    "runtime-main.js.map": "/cv-project/static/js/runtime-main.104b7cb5.js.map",
+    "static/js/2.a6b4b82b.chunk.js": "/cv-project/static/js/2.a6b4b82b.chunk.js",
+    "static/js/2.a6b4b82b.chunk.js.map": "/cv-project/static/js/2.a6b4b82b.chunk.js.map",
+    "index.html": "/cv-project/index.html",
+    "static/css/main.1211d2f4.chunk.css.map": "/cv-project/static/css/main.1211d2f4.chunk.css.map",
+    "static/js/2.a6b4b82b.chunk.js.LICENSE.txt": "/cv-project/static/js/2.a6b4b82b.chunk.js.LICENSE.txt",
+    "static/media/CVMaker.css": "/cv-project/static/media/Nunito-Regular.e4eb7682.ttf",
+    "static/media/email.7be6e02d.svg": "/cv-project/static/media/email.7be6e02d.svg",
+    "static/media/location.fda555ee.svg": "/cv-project/static/media/location.fda555ee.svg",
+    "static/media/phone.4f06bac0.svg": "/cv-project/static/media/phone.4f06bac0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.104b7cb5.js",
+    "static/js/2.a6b4b82b.chunk.js",
+    "static/css/main.1211d2f4.chunk.css",
+    "static/js/main.fad92e7d.chunk.js"
+  ]
+}
