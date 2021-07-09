@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(../Nunito-Regular.ttf);
+}
+
+:root {
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  background-color: honeydew;
+}
+
+#toggle-div {
+  text-align: center;
+}
+
+#toggle-button {
+  margin-top: 1rem;
+  border: 1px solid honeydew;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#toggle-button:hover {
+  border-bottom: 1px solid black;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+input {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+}
+
+.cvmaker {
+  display: flex;
+  align-items: flex-start;
+}
+
+.preview-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-container {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .cvmaker {
+    flex-direction: column;
+  }
+
+  .cvmaker > * {
+    margin-bottom: 4rem;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+
+  .preview-container {
+    width: 90%;
+  }
+}

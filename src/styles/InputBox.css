@@ -1,0 +1,33 @@
+.inputbox {
+  padding: 4rem;
+}
+
+.Personal > * > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.Personal > * > * > * {
+  margin: 1rem 0;
+}
+
+.Education > * > *,
+.Work > * > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.Education > * > * > input,
+.Work > * > * > input {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-bottom: 2rem;
+  font-family: "Nunito";
+  cursor: pointer;
+}
+
+.exp-entry {
+  margin: 3rem 0;
+}

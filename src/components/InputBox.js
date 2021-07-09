@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { Personaldetails } from './Personaldetails';
 import { Experience } from './Experience';
+import '../styles/InputBox.css';
 
 class InputBox extends Component{
-    constructor(props){
-        super(props);
-
-    }
 
     displayEducation = () => {
        return (
@@ -26,7 +23,7 @@ class InputBox extends Component{
 
     render(){
         return(
-            <div>
+            <div className="inputbox">
                 <div className="Personal">
                     <Personaldetails data = {this.props.data.personal} update={this.props.updatePersonal} /> 
                 </div>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { InputBox } from './InputBox';
+import { Preview } from './Preview';
+import '../styles/CVMaker.css';
 
 class CVMaker extends Component{
     constructor(props){
@@ -7,8 +9,7 @@ class CVMaker extends Component{
 
         this.state = {
             personal : {
-                firstname : "",
-                lastname : "",
+                fullname: "",
                 occupation : "",
                 phone : "",
                 email : "",
@@ -34,6 +35,8 @@ class CVMaker extends Component{
                     dateTo : ""
                 }
             ],
+
+            previewonly : false,
 
         };
     }
@@ -89,18 +92,28 @@ class CVMaker extends Component{
     render(){
         return(
             <div>
-                <div className="main-container">
-                    <InputBox 
-                    data = {this.state}
-                    updatePersonal = {this.updatePersonal}
-                    updateEducation = {this.updateEducation}
-                    updateWork = {this.updateWork}
-                    newEducation = {this.newEducation}
-                    newWork = {this.newWork}
-                    />
+                <div id="toggle-div">
+                <button id="toggle-button" onClick = {()=>this.setState({previewonly : !this.state.previewonly})}>{!this.state.previewonly ? "Viewing Mode" : "Editing Mode"}</button>
                 </div>
-                <div className="preview-container">
-
+                <div className="cvmaker">
+                    {!this.state.previewonly ? 
+                    <div className="main-container">
+                        <InputBox 
+                        data = {this.state}
+                        updatePersonal = {this.updatePersonal}
+                        updateEducation = {this.updateEducation}
+                        updateWork = {this.updateWork}
+                        newEducation = {this.newEducation}
+                        newWork = {this.newWork}
+                        />
+                    </div>
+                    : <></>}
+                    <div className="preview-container">
+                        <h2>Preview</h2>
+                        <Preview 
+                        data = {this.state}
+                        />
+                    </div>
                 </div>
             </div>
         );
